@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>HEAT</title>
+	<link rel="stylesheet" type="text/css"  href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	
+	
+</head>
+ 
+ 
+  <body>
+
+		<section class="heat-exchanger heating">
+			
+			<div class="heat-exchanger__title">
+				<h1>Подбор теплообменника для системы отопления (вентиляции)</h1>
+			</div>
+			
+			<div class="heat-exchanger__custom-select border">
+				
+				<div class="heat-exchanger__custom-select-heat-duty">
+					<span>
+						Тепловая нагрузка, Гкал/ч
+					</span>
+									
+					<div class="heat-exchanger__custom-select-value">
+						<select>
+							<option value="0">Выберите нагрузку</option>
+							<option value="0,01">0,01</option>
+							<option value="0,02">0,02</option>
+							<option value="0,03">0,03</option>
+							<option value="0,04">0,04</option>
+							<option value="0,05">0,05</option>
+							<option value="0,10">0,10</option>
+							<option value="0,20">0,20</option>
+							<option value="0,30">0,30</option>
+							<option value="0,40">0,40</option>
+							<option value="0,50">0,50</option>
+							<option value="0,60">0,60</option>
+							<option value="0,70">0,70</option>
+							<option value="0,80">0,80</option>
+							<option value="0,90">0,90</option>
+							<option value="1,00">1,00</option>
+							<option value="1,10">1,10</option>
+							<option value="1,20">1,20</option>
+							<option value="1,30">1,30</option>
+							<option value="1,40">1,40</option>
+							<option value="1,50">1,50</option>
+						</select>
+					</div>
+					
+				
+				
+				<div class="heat-exchanger__custom-select-output">
+					<span>Марка теплообменника</span>
+					
+					<div class="heat-exchanger__custom-select-output-name">
+						<input id="output" disabled placeholder="Результат">
+						
+					</div>
+					
+				</div>
+				<div class="heat-exchanger__custom-select-output">
+					<span>Стоимость</span>
+					
+					<div class="heat-exchanger__custom-select-output-name">
+						<input id="output" disabled placeholder="По запросу">
+						
+					</div>
+					
+				</div>
+				
+				<div class="heat-exchanger__custom-select-reference">
+					<h3>Примечание:</h3>
+					<p>Для подбора теплообменника приняты следующие параметры: 
+					<br>
+					&bull; температурный график сетевой воды <strong> 105/75&deg;С</strong>
+					<br>
+					&bull; температурный график в системе отопления <strong> 90/70&deg;С</strong>
+					<br>
+					&bull; потери давления в теплообменике <strong> до 2  м</strong>
+					<br>
+					&bull; запас поверхности <strong> не менее 10%</strong>
+					
+					</p>
+				</div>
+				
+				<div class="heat-exchanger__custom-select-calc">
+					
+					<p> <strong>Данный подбор является ознакомительным. </strong>Для подбора теплообменника по другим параметрам Вы можете связаться с нашим специалистом по телефонам или E-mail, указанным в разделе <a href="https://termopotok.by/kontakty"><strong>Контакты</strong></a>, или воспользуйтесь онлайн запросом в разделе <a href="https://termopotok.by/podbor"><strong>Подбор</strong></a> по ссылке ниже</p>
+				</div>
+				
+			</div>					
+			</div>
+			
+		<div class="calc">
+			<a href="https://termopotok.by/podbor">Подбор
+				<i class="fas fa-calculator"></i>
+			</a>
+		</div>
+		
+		</section>
+		
+		<section class="heat-exchanger water">
+			
+			<div class="heat-exchanger__title">
+				<h1>Подбор теплообменника для системы горячего водоснабжения</h1>
+			</div>
+			
+			<div class="heat-exchanger__custom-select border">
+				
+				<div class="heat-exchanger__custom-select-heat-duty">
+					<span>
+						Тепловая нагрузка, Гкал/ч
+					</span>
+									
+					<div class="heat-exchanger__custom-select-value">
+						<select>
+							<option value="0">Выберите нагрузку</option>
+							<option value="0,01">0,01</option>
+							<option value="0,02">0,02</option>
+							<option value="0,03">0,03</option>
+							<option value="0,04">0,04</option>
+							<option value="0,05">0,05</option>
+							<option value="0,10">0,10</option>
+							<option value="0,20">0,20</option>
+							<option value="0,30">0,30</option>
+							<option value="0,40">0,40</option>
+							<option value="0,50">0,50</option>
+							<option value="0,60">0,60</option>
+							<option value="0,70">0,70</option>
+							<option value="0,80">0,80</option>
+							<option value="0,90">0,90</option>
+							<option value="1,00">1,00</option>
+							<option value="1,10">1,10</option>
+							<option value="1,20">1,20</option>
+							<option value="1,30">1,30</option>
+							<option value="1,40">1,40</option>
+							<option value="1,50">1,50</option>
+						</select>
+					</div>
+					
+				
+				
+				<div class="heat-exchanger__custom-select-output">
+					<span>Марка теплообменника</span>
+					
+					<div class="heat-exchanger__custom-select-output-name">
+						<input id="output" disabled placeholder="Результат">
+						
+					</div>
+						
+				</div>
+				
+				
+				<div class="heat-exchanger__custom-select-output">
+					<span>Стоимость</span>
+					
+					<div class="heat-exchanger__custom-select-output-name">
+						<input id="output" disabled placeholder="По запросу">
+						
+					</div>
+					
+				</div>
+				
+				<div class="heat-exchanger__custom-select-reference">
+					<h3>Примечание:</h3>
+					<p>Для подбора теплообменника приняты следующие параметры: 
+					<br>
+					&bull; температурный график сетевой воды <strong> 60/30&deg;С</strong>
+					<br>
+					&bull; температурный график в системе ГВС <strong> 5/55&deg;С</strong>
+					<br>
+					&bull; потери давления в теплообменике <strong> до 2  м</strong>
+					<br>
+					&bull; запас поверхности <strong>не менее 5%</strong>
+					<br>
+					&bull; схема подключения - <strong>параллельная с патрубком циркуляции Т4</strong> 
+					
+					</p>
+				</div>
+				
+				<div class="heat-exchanger__custom-select-calc">
+					
+					<p><strong>Данный подбор является ознакомительным. </strong>Для подбора теплообменника по другим параметрам Вы можете связаться с нашим специалистом по телефонам или E-mail, указанным в разделе <a href="https://termopotok.by/kontakty"><strong>Контакты</strong></a>, или воспользуйтесь онлайн запросом в разделе <a href="https://termopotok.by/podbor"><strong>Подбор</strong></a> по ссылке ниже</p>
+				</div>
+				
+			</div>					
+			</div>
+			
+		<div class="calc">
+			<a href="https://termopotok.by/podbor">Подбор
+				<i class="fas fa-calculator"></i>
+			</a>
+		</div>
+		
+		</section>
+		
+  	<div class="calc-button">
+		
+			<div class="calc-button__icon">
+				<a href="https://termopotok.by/podbor"><i class="fas fa-calculator"></i></a>
+			</div>
+
+
+			<div class="calc-button__text">
+				<a href="https://termopotok.by/podbor">подбор</a>
+			</div>
+		
+		</div>
+  	
+  	
+   
+  </body>
+</html>
