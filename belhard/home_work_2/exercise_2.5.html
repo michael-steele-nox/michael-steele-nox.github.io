@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Занятие 2 Задача 5</title>
+</head>
+<body>
+	<table align="center" border="1" cellpadding="5" width="80%">
+		<caption>
+			Заказ товаров
+		</caption>
+		
+		<tbody>
+		
+			<tr>
+				<td align="right">Ваше имя:</td>
+				<td align="left">
+					<input type="text" size="40" name="userName" autofocus>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">E-mail:</td>
+				<td align="left">
+					<input type="email" size="40" name="userEmail">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Адрес сайта:</td>
+				<td align="left">
+					<input type="url" size="30" name="userUrl">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Название товара:</td>
+				<td align="left">
+					<input type="text" size="40" name="userOrder">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Фото</td>
+				<td align="left">
+					<input type="file" size="50" name="userFile">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Цена, BYN</td>
+				<td align="left">
+					<input type="text" size="1" name="userFile" readonly value="1500">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Операционная система</td>
+				<td align="left">
+					<input id="a1" type="radio" name="userOS" value="1">
+					<label for="a1">Android</label>
+					<br>
+					<input id="a2" type="radio" name="userOS" value="2" checked>
+					<label for="a2">Apple iOs</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Оперативная память</td>
+				<td align="left">
+					<input id="b1" type="radio" name="userRAM" value="1">
+					<label for="b1">3 Гб</label>
+					<br>
+					<input id="b2" type="radio" name="userRAM" value="2" checked>
+					<label for="b2">4 Гб</label>
+					<br>
+					<input id="b3" type="radio" name="userRAM" value="3">
+					<label for="b3">6 Гб</label>
+					<br>
+					<input id="b4" type="radio" name="userRAM" value="4">
+					<label for="b4">от 8 Гб и выше</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Флэш-память</td>
+				<td align="left">
+					<input id="c1" type="checkbox" name="userRom1" value="1">
+					<label for="c1">32 Гб</label>
+					<br>
+					<input id="c2" type="checkbox" name="userRom1" value="2">
+					<label for="c2">64 Гб</label>
+					<br>
+					<input id="c3" type="checkbox" name="userRom1" value="3" checked>
+					<label for="c3">128 Гб</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Камера, Мп</td>
+				<td align="left">
+					<input id="d1" type="checkbox" name="userCam1" value="1">
+					<label for="d1">8 Мп</label>
+					<br>
+					<input id="d2" type="checkbox" name="userCam1" value="2" checked>
+					<label for="d2">12 Мп</label>
+					<br>
+					<input id="d3" type="checkbox" name="userCam1" value="3" checked>
+					<label for="d3">16 Мп и более</label>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">Цвет корпуса</td>
+				<td align="left">
+					<input type="color" name="userColor" value="#ffffff">
+				</td>
+			</tr>
+			
+			<tr>
+				<td align="right">
+					<input type="submit" value="Отправить">
+				</td>
+				<td align="left">
+					<input type="reset" value="Очистить">
+				</td>
+			</tr>
+			
+		</tbody>
+		
+	</table>
+</body>
+</html>
