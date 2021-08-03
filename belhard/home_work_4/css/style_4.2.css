@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=RocknRoll+One&display=swap');
+
+:root {
+	--postcard-width: 600px;
+	--postcard-right-gap: 100px;
+  --postcard-top-gap: 200px;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: 'Pacifico', cursive;
+	font-size: 14px;
+}
+
+.postcard {
+	position: absolute;
+	border: 1px solid blue;
+  width: var(--postcard-width);
+	padding: 0  20px 20px;
+}
+
+.postcard-image {
+  width: 300px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 20px;
+}
+
+.postcard-text {
+	text-align: justify;
+}
+
+/*
+.postcard img:first-child {
+	float: left;
+	margin-right: 20px;
+}
+.postcard img:not(:first-child) {
+	float: right;
+	margin-left: 20px;
+}
+*/
+
+.postcard img:nth-child(n) {
+	float: right;
+	margin-left: 20px;
+}
+.postcard img:nth-child(4n+1) {
+	float: left;
+	margin-right: 20px;
+	margin-left: 0;
+/*	margin-top: 20px;*/
+}
+
+
+.postcard:nth-child(2n){
+	left: calc(var(--postcard-width) + var(--postcard-right-gap));
+	top: calc(var(--postcard-top-gap) + var(--postcard-top-gap));
+}
+
+.postcard:nth-child(n+3){
+	left: calc(var(--postcard-width) * 2 + var(--postcard-right-gap) * 2);
+	top: calc(var(--postcard-top-gap) + var(--postcard-top-gap) * 3);
+}
