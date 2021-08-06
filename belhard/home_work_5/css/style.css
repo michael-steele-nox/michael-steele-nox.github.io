@@ -1,0 +1,102 @@
+/*
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*/
+* {
+	font-family: arial;
+	font-size: 20px;
+}
+
+.animated-image img {
+	height: 100px;
+}
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+.brick-wall-fixed img{
+	height: 100px;
+	position: fixed;
+	top: 10px;
+	left: 500px;
+}
+
+.brick-wall-fixed img{
+	animation: infinite shakeX 2s linear;
+/*
+	-webkit-box-shadow: -2px 5px 8px 2px rgba(0,0,0,0.4) ;
+	box-shadow: -2px 5px 8px 2px rgba(0,0,0,0.4) ;
+*/
+}
+
+@keyframes shakeX {
+	0%{
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	80% {
+		transform: translateX(10px) skewX(-10deg);
+	}
+	90% {
+		transform: translateX(-10px) skewX(10deg);
+	}
+}
+
+.animated-image img{
+	animation: infinite movingCart 2s linear;
+	
+}
+
+@keyframes movingCart {
+	0%{
+		opacity: 1;
+		transform: translateX(-200px);
+	}
+	50% {
+		transform: translateX(400px);
+	}
+	80% {
+		opacity: 1;
+		transform: translateX(400px) rotate(-180deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(0px) rotate(-360deg);
+	}
+}
+
+.menu {
+	display: flex;
+	position: absolute;
+	width: 120px;
+	justify-content: space-between;
+}
+
+.menu .fas {
+	font-size: 50px;
+	color: #cccccc;
+}
+
+.menu {
+	margin-top: 10px;
+	left: -60px;
+	transition: 1s linear;
+	cursor: pointer;
+}
+
+.menu:hover{
+	transform: translateX(90px) scale(1.2, 1.2);
+}
+
+.menu i {
+	transition: 1s linear;
+}
+.menu:hover i {
+	color: #000;
+}
