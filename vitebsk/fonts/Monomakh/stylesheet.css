@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Monomakh Unicode TT';
+    src: url('MonomakhUnicodeTT.eot');
+    src: local('Monomakh Unicode TT Medium'), local('MonomakhUnicodeTT'),
+        url('MonomakhUnicodeTT.eot?#iefix') format('embedded-opentype'),
+        url('MonomakhUnicodeTT.woff') format('woff'),
+        url('MonomakhUnicodeTT.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

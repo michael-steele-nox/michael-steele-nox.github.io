@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+@font-face {
+font-family: 'Monomakh Unicode Regular';
+src: url('../fonts/Monomakh/MonomakhUnicodeTT.eot');
+src: url('../fonts/Monomakh/MonomakhUnicodeTT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Monomakh/MonomakhUnicodeTT.woff') format('woff'),
+url('../fonts/Monomakh/MonomakhUnicodeTT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+*, body{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #fff;
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar-wrap{
+	top: 0;
+	
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	margin: 0px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+.navbar__logo{
+	
+	margin: 0px 0px 0px 0px;
+	padding: 8px;
+	background-color: rgba(255,255,255,0.8);
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navbar__logo .navbar-logo__gerb{
+	width: 100px;
+}
+
+.navbar__logo span{
+	display: flex;
+	margin-top: 10px;
+	font-family: 'Monomakh Unicode Regular';
+	font-size: 24px;
+}
+
+.navbar__menu{
+	display: flex;	
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.navbar__menu a{
+	font-family: 'Monomakh Unicode Regular';
+	align-self: center;
+	font-size: 26px;
+}
+
+.navbar__menu a{
+	width: 180px;
+	height: 40px;
+	color: #000;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(255,255,255,0.8);
+	transition: .5s;
+}
+
+.navbar__menu a:hover{
+	color: rgba(255,255,255,1);
+	background-color: rgba(0,0,0,1);
+}
+
+.container{
+	margin: 20px auto 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgBox__img{
+	width: 800px;
+}
+
+
+.container .box .imgBox{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+}
+
+.container .box{
+	max-width: 800px;
+	margin: 0px auto 0px;
+	display: flex;
+}
+
+.container .box{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	background: rgba(255,255,255,0.85);
+}
+
+.container .box .details{
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	padding: 20px 30px;
+	color: #000;
+}
+
+.container .box .details p{
+	text-align: justify;
+}
+
+.container .box .details{
+	font-size: 18px;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer .footer__menu{
+	border: 2px solid black;
+	width: 800px;
+	margin: 0px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+footer .footer__menu a{
+	
+	font-family: 'Monomakh Unicode Regular';
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+
+footer .footer__menu a{
+	width: 199px;
+	height: 35px;
+	margin: 0px;
+	color: rgba(0,0,0,1);
+	text-align: center;
+}
+
+footer .footer__menu a{
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0s;
+}
+
+footer .footer__menu i{
+	padding-right: 10px;
+}
+
+footer .footer__menu a:hover{
+	background: rgba(0,0,0,1);
+	color: rgba(255, 255, 255, 1);
+}
+
+#topBtn{
+	position: fixed;
+	bottom: 50px;
+	right: 40px;
+	font-size: 32px;
+	width: 40px;
+	height: 40px;
+	border-radius: 0%;
+	background: rgba(0, 0, 0, 0.4);
+	color: rgba(255, 255, 255, 0.6);
+	border: transparent;
+	cursor: pointer;
+
+}
+
+@media (max-width: 800px) and (max-width: 1920px){
+	
+	.container .box{
+		width: 100%;
+		height: 100%;
+	}
+	
+	footer .footer__menu{
+		width: 800px;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	
+	footer .footer__menu a{
+		width: 800px;
+		height: 20px;
+		font-size: 16px;
+		border-top: 0px solid black;
+		
+	}
+	.imgBox__img{
+		width: 600px;
+	}
+
+	
+	#topBtn{
+		bottom: 100px;
+		right: 40px;
+		
+	}
+}
+
+
+
+
+
